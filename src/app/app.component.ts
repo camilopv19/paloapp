@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'PaloIT';
 
   formulario = this.fb.group({
-    digito: ['', Validators.required],
+    digito: '',
     num: ''
   });
 
