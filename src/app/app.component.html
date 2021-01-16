@@ -1,11 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="#">TestPaloIT</a>
 </nav>
-<div class="container-fluid ">
-  <div class="row">
+<div class="d-flex justify-content-center">
     <br>
-    <div class="col">
-      <form [formGroup]="formulario">
+      <form [formGroup]="formulario" class="form-floating" >
         <label for="digito">
           Card number
           <input  type="number" formControlName="digito" class="form-control" id="digito" name="digito" type="text">
@@ -14,10 +12,9 @@
         <button class="btn btn-secondary" (click)="validar()">CALCULAR NÚMERO DE LA SUERTE</button>
         <br>
         <label for="etiqueta">
-          Número de la suerte: {{ formulario.value.num }}
+          <div id="etiqueta">
+            Número de la suerte: {{ formulario.value.num }}
+          </div>
         </label>
       </form>
-    </div>
-
-  </div>
 </div>
